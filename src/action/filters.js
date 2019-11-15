@@ -1,4 +1,4 @@
-export const settextfilter = textupdate => ({
+export const settextfilter = (textupdate = "") => ({
   type: "EDITTEXT_FILTER",
   textupdate
 });

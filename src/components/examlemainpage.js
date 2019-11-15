@@ -2,7 +2,7 @@ import React from "react";
 import ExpensesList from "./Expenseslist";
 import Expenselistfilters from "./expenseslistfilter";
 
-const Examlemainpage = () => (
+export const Examlemainpage = () => (
   <div>
     This is the Main Page Content
     <Expenselistfilters />

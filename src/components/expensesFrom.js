@@ -1,19 +1,22 @@
 import React from "react";
 import moment from "moment";
 import { SingleDatePicker } from "react-dates";
-import "react-dates/lib/css/_datepicker.css";
 
 const now = moment();
 
 export default class ExpemsesFrpm extends React.Component {
-  state = {
-    decription: "",
-    note: "",
-    amount: "",
-    createdAt: moment(),
-    calenderFocus: false,
-    error: ""
-  };
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      decription: props.expense ? props.expense.decription : "",
+      note: props.expense ? props.expense.note : "",
+      amount: props.expense ? (props.expense.amount / 100).toString() : "",
+      createdAt: props.expense ? moment(props.expense.createdAt) : moment(),
+      calenderFocus: false,
+      error: ""
+    };
+  }
 
   onDecription = e => {
     const decription = e.target.value;

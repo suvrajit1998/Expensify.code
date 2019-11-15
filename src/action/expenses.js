@@ -5,7 +5,7 @@ export const addexpense = ({
   note = "",
   amount = 0,
   createdAt = 0
-}) => ({
+} = {}) => ({
   type: "ADD_EXPENSES",
   expenses: {
     id: uuid(),

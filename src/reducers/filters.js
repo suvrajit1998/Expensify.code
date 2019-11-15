@@ -1,8 +1,10 @@
+import moment from "moment";
+
 const filterreducerdefaultarray = {
   text: "",
   shortBy: "date",
-  startDate: undefined,
-  endDate: undefined
+  startDate: moment().startOf("month"),
+  endDate: moment().endOf("month")
 };
 
 export default (state = filterreducerdefaultarray, action) => {
