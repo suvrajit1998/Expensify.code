@@ -4,7 +4,7 @@ import { SingleDatePicker } from "react-dates";
 
 const now = moment();
 
-export default class ExpemsesFrpm extends React.Component {
+export default class ExpensesFrom extends React.Component {
   constructor(props) {
     super(props);
 
