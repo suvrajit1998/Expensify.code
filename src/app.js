@@ -12,9 +12,9 @@ import getvisibleexpenses from "./selector/getvisibleexpenses";
 
 const stor = storconfig();
 
-stor.dispatch(addexpense({ decription: "water bill", amount: 600 }));
-stor.dispatch(addexpense({ decription: "gas bill", createdAt: 1000 }));
-stor.dispatch(addexpense({ decription: "foods bill", amount: 10900 }));
+// stor.dispatch(addexpense({ decription: "water bill", amount: 600 }));
+// stor.dispatch(addexpense({ decription: "gas bill", createdAt: 1000 }));
+// stor.dispatch(addexpense({ decription: "foods bill", amount: 10900 }));
 
 // stor.dispatch(settextfilter("Water"));
 
@@ -22,9 +22,9 @@ stor.dispatch(addexpense({ decription: "foods bill", amount: 10900 }));
 //   stor.dispatch(settextfilter("bill"));
 // }, 3000);
 
-const state = stor.getState();
-const getvisibleExpenses = getvisibleexpenses(state.expenses, state.filters);
-console.log(getvisibleExpenses);
+// const state = stor.getState();
+// const getvisibleExpenses = getvisibleexpenses(state.expenses, state.filters);
+// console.log(getvisibleExpenses);
 
 const gsx = (
   <Provider store={stor}>
